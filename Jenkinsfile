@@ -1,5 +1,3 @@
-# Generated from . Do not edit directly.
-
 library identifier: 'RHTAP_Jenkins@main', retriever: modernSCM(
   [$class: 'GitSCMSource',
    remote: 'https://github.com/redhat-appstudio/tssc-sample-jenkins.git'])
