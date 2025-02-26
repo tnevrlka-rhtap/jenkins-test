@@ -23,8 +23,8 @@ pipeline {
     stages {
         stage('init') {
             steps {
+                echo "CENTRAL_ENDPOINT is: ${ROX_CENTRAL_ENDPOINT}"
                 script {
-                    echo "CENTRAL_ENDPOINT is: ${ROX_CENTRAL_ENDPOINT}"
                     rhtap.info('init')
                     rhtap.init()
                 }
