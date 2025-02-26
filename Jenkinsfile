@@ -20,6 +20,7 @@ pipeline {
     }    
   environment {
         ROX_CENTRAL_ENDPOINT = "${ env.ROX_CENTRAL_ENDPOINT }"
+  }
     stages {
         stage('init') {
             steps {
