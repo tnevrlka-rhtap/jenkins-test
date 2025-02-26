@@ -1,0 +1,23 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: jenkins-test 
+  description: Secure Supply Chain Example for User Provided Repo   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:
+    # ArgoCD apps from this template used rhtap-gitops as the grouping
+    argocd/app-selector: rhtap/gitops=jenkins-test
+    backstage.io/kubernetes-id: jenkins-test 
+    backstage.io/techdocs-ref: dir:. 
+    jenkins.io/job-full-name: jenkins-test
+    quay.io/repository-slug: tnevrlka-rhtap/jenkins-test
+  tags: ["experimental", "sscs", "sbom", "acs"] 
+spec:
+  type: service
+  owner: user:guest 
+  lifecycle: experimental
+ 
