@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: jenkins-test-gitops-repository
+spec:
+  url: https://github.com/tnevrlka-rhtap/jenkins-test-gitops
